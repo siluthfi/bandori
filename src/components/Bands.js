@@ -23,7 +23,7 @@ class Bands extends Component {
                 <section for="popipa">
                     <div className="row">
                         <div className="col-md mb-3 text-center">
-                            <img src="/img/Poppin Party logo.png" alt="" className="img-fluid" width="400" />
+                            <img src="/img/Poppin Party logo.png" alt="" className="img-fluid" width="350" />
                         </div>
                     </div>
                     <div className="row">
@@ -33,8 +33,8 @@ class Bands extends Component {
                             </Link>
                         </div>
                         <div className="col-md mb-3">
-                            <Link to="/bands/poppin-party/tae-hanazono">
-                                <img src="/img/tae.png" alt="" className="img-fluid shadow link-custom" />
+                            <Link to="/bands/poppin-party/saaya-yamabuki">
+                                <img src="/img/saaya.png" alt="" className="img-fluid shadow link-custom" />
                             </Link>
                         </div>
                         <div className="col-md mb-3">
@@ -48,8 +48,8 @@ class Bands extends Component {
                             </Link>
                         </div>
                         <div className="col-md mb-3">
-                            <Link to="/bands/poppin-party/saaya-yamabuki">
-                                <img src="/img/saaya.png" alt="" className="img-fluid shadow link-custom" />
+                            <Link to="/bands/poppin-party/tae-hanazono">
+                                <img src="/img/tae.png" alt="" className="img-fluid shadow link-custom" />
                             </Link>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ class Bands extends Component {
                 <section for="afterglow">
                     <div className="row">
                         <div className="col-md mb-3 text-center">
-                            <img src="/img/Afterglow.png" alt="" className="img-fluid" width="400" />
+                            <img src="/img/Afterglow.png" alt="" className="img-fluid" width="350" />
                         </div>
                     </div>
                     <div className="row">
@@ -93,33 +93,33 @@ class Bands extends Component {
                 <section for="pasupare">
                     <div className="row">
                         <div className="col-md mb-3 text-center">
-                            <img src="/img/Afterglow.png" alt="" className="img-fluid" width="400" />
+                            <img src="/img/pasupare.png" alt="" className="img-fluid" width="350" />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md mb-3">
-                            <Link to="/bands/afterglow/tsugumi-hazawa">
-                                <img src="/img/tsugumi.png" alt="" className="img-fluid link-custom shadow" />
+                            <Link to="/bands/pastel-pallets/eve-wakamiya">
+                                <img src="/img/eve.png" alt="" className="img-fluid link-custom shadow" />
                             </Link>
                         </div>
                         <div className="col-md mb-3 ">
-                            <Link to="/bands/afterglow/tomoe-udagawa">
-                                <img src="/img/tomoe 2.png" alt="" className="img-fluid link-custom shadow" />
+                            <Link to="/bands/pastel-pallets/maya-yamato">
+                                <img src="/img/maya.png" alt="" className="img-fluid link-custom shadow" />
                             </Link>
                         </div>
                         <div className="col-md mb-3 ">
-                            <Link to="/bands/afterglow/ran-mitake">
-                                <img src="/img/ran 1.png" alt="" className="img-fluid link-custom shadow" />
+                            <Link to="/bands/pastel-pallets/aya-maruyama">
+                                <img src="/img/aya.png" alt="" className="img-fluid link-custom shadow" />
                             </Link>
                         </div>
                         <div className="col-md mb-3 ">
-                            <Link to="/bands/afterglow/himari-uehara">
-                                <img src="/img/himari 2.png" alt="" className="img-fluid link-custom shadow" />
+                            <Link to="/bands/pastel-pallets/chisato-shirasagi">
+                                <img src="/img/chisato.png" alt="" className="img-fluid link-custom shadow" />
                             </Link>
                         </div>
                         <div className="col-md mb-3 ">
-                            <Link to="/bands/afterglow/moca-aoba">
-                                <img src="/img/moca.png" alt="" className="img-fluid link-custom shadow" />
+                            <Link to="/bands/pastel-pallets/hina-hikawa">
+                                <img src="/img/hina.png" alt="" className="img-fluid link-custom shadow" />
                             </Link>
                         </div>
                     </div>
