@@ -124,6 +124,41 @@ class Bands extends Component {
                         </div>
                     </div>
                 </section>
+
+                <section for="roselia">
+                    <div className="row">
+                        <div className="col-md mb-3 text-center">
+                            <img src="/img/roselia.png" alt="" className="img-fluid" width="350" />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md mb-3">
+                            <Link to="/bands/roselia/rinko-shirokane">
+                                <img src="/img/rinko.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                        <div className="col-md mb-3 ">
+                            <Link to="/bands/roselia/ako-udagawa">
+                                <img src="/img/ako.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                        <div className="col-md mb-3 ">
+                            <Link to="/bands/roselia/yukina-minato">
+                                <img src="/img/yukina.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                        <div className="col-md mb-3 ">
+                            <Link to="/bands/roselia/lisa-imai">
+                                <img src="/img/lisa.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                        <div className="col-md mb-3 ">
+                            <Link to="/bands/roselia/sayo-hikawa">
+                                <img src="/img/sayo.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                    </div>
+                </section>
             </div>
         );
     }
