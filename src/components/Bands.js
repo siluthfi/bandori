@@ -159,6 +159,41 @@ class Bands extends Component {
                         </div>
                     </div>
                 </section>
+
+                <section for="roselia">
+                    <div className="row">
+                        <div className="col-md mb-3 text-center">
+                            <img src="/img/harohapi.png" alt="" className="img-fluid" width="350" />
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md mb-3">
+                            <Link to="/bands/hello-happy-world/misaki-okusawa">
+                                <img src="/img/misaki.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                        <div className="col-md mb-3 ">
+                            <Link to="/bands/hello-happy-world/kanon-matsubara">
+                                <img src="/img/kanon.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                        <div className="col-md mb-3 ">
+                            <Link to="/bands/hello-happy-world/kokoro-tsurumaki">
+                                <img src="/img/kokoro.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                        <div className="col-md mb-3 ">
+                            <Link to="/bands/hello-happy-world/hagumi-kitazawa">
+                                <img src="/img/hagumi.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                        <div className="col-md mb-3 ">
+                            <Link to="/bands/hello-happy-world/kaoru-seta">
+                                <img src="/img/kaoru.png" alt="" className="img-fluid link-custom shadow" />
+                            </Link>
+                        </div>
+                    </div>
+                </section>
             </div>
         );
     }
