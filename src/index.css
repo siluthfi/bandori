@@ -155,3 +155,13 @@ body::before {
 .link-custom:hover {
     transform: translateY(-20px);
 }
+
+.btn-custom {
+    background-color: salmon;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: rgb(250, 95, 78);
+    color: white;
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
 
 const Navbar = (props) => {
-    if (props.history.location.pathname == "/") {
+    if (props.history.location.pathname === "/") {
         props.history.push('/home')
     }
 

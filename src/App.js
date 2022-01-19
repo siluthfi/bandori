@@ -1,10 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './templates/Navbar'
-import Footer from './templates/Footer';
-import Charas from './components/Charas'
 import Bands from './components/Bands'
 import Home from './components/Home';
+import Chara from './components/Chara';
 
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route exact path="/bands" component={Bands} />
+          <Route exact path="/bands/:band/:member" component={Chara} />
         </Switch>
         {/* <Footer /> */}
       </div>
