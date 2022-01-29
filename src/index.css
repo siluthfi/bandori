@@ -165,3 +165,11 @@ body::before {
     background-color: rgb(250, 95, 78);
     color: white;
 }
+
+.on-hover {
+    cursor: pointer;
+}
+
+.transition-3 {
+    transition: .3s;
+}
