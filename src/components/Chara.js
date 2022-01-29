@@ -1,10 +1,15 @@
-import { Link, useParams } from "react-router-dom";
+import { useEffect, useState } from 'react'
+import { useParams, useHistory } from "react-router-dom";
 import DataMember from "./data/DataMember";
 import DataBand from "./data/DataBand";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 
 const Chara = () => {
+    useEffect(() => {
+        setGambar(member)
+    }, []);
+
     const [name, setName] = useState('');
     const { band, member } = useParams()
     const eachmember = useSelector(state => state.characters)
@@ -12,24 +17,50 @@ const Chara = () => {
                         .filter(band => band.nameSlug === member)
                         .map(data => data)[0];
 
-    /* using custom hooks 
-        const { band: bandname, hash } = DataBand(band)
-        const { name, role } = DataMember(member)
+    const history = useHistory();
+    console.log(history)
+    
+    const [gambar, setGambar] = useState(null);
+    
+    /* using custom hooks
+    const { band, member } = useParams()
+    const { band: bandname, hash } = DataBand(band)
+    const { name, role } = DataMember(member)
     */
+
+    console.log(gambar)
+    const handleClick = () => {
+        setGambar(member + "-before")
+    }
+    
+    const handleClick2 = () => {
+        setGambar(member)
+    }
 
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-md-3 offset-md-1">
-                    <img src={`/img/${eachmember.nameSlug}.png`} alt="" className="img-fluid shadow" />
+            <div className="row justify-content-center">
+                <div className="col-md-2 d-flex align-content-center flex-wrap">
+                    <div className="row">
+                        <div className="col-md on-hover" onClick={handleClick}>
+                            <img src={`/img/${eachmember.nameSlug}-icon-before.png`} alt="" className='shadow' />
+                        </div>
+                    </div>
                 </div>
-                <div className="col-md-7 bg-white shadow">
-                    <h1 className="text-center display-3 mt-5"></h1>
+                <div className="col-md-3">
+                    <img src={`/img/${eachmember.nameSlug}.png`} alt="" className="img-fluid shadow transition-3" />
+                </div>
+                <div className="col-md-2 d-flex align-content-center flex-wrap">
+                    <div className="row">
+                        <div className="col-md on-hover" onClick={handleClick2}>
+                            <img src={`/img/${eachmember.nameSlug}-icon.png`} alt="" className='shadow' />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="row my-5">
-                <div className="col-md-3 offset-md-1">
-                    <Link to={`/bands#${eachmember.slug}`} className="btn btn-custom shadow-sm">Back</Link>
+            <div className="row my-5 justify-content-center">
+                <div className="col-md-1">
+                    <button className="btn btn-custom shadow-sm" onClick={() => history.goBack()}>Back</button>
                 </div>
             </div>
         </div>

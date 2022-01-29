@@ -61,6 +61,18 @@ const BandEach = ({ characters }) => {
                 </div>
         )
     })
+    
+    const morfonica = characters.filter(chara => {
+        return chara.band === "Morfonica"
+    }).map((chara, id) => {
+        return (
+                <div className="col-md mb-3" id="Morfonica" key={id + 1}>
+                    <Link to={`/bands/${chara.slug}/${chara.nameSlug}`}>
+                        <img src={`/img/${chara.nameSlug}.png`} alt="" className="img-fluid shadow link-custom" />
+                    </Link>
+                </div>
+        )   
+    })
 
     return (
         <>
@@ -116,6 +128,17 @@ const BandEach = ({ characters }) => {
                 </div>
                 <div className="row">
                     {harohapi}
+                </div>
+            </section>
+            
+            <section id="morfonica">
+                <div className="row">
+                    <div className="col-md mb-3 text-center">
+                        <img src="/img/morfonica.png" alt="" className="img-fluid" width="350" />
+                    </div>
+                </div>
+                <div className="row">
+                    {morfonica}
                 </div>
             </section>
         </>
