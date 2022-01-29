@@ -33,7 +33,7 @@ const initState = {
         {id: 31, name: 'Rei Wakana', band: "Raise A Suilen", role: "Vocal & Bass", stageName: "LAYER", slug: "raise-a-suilen", nameSlug: "rei-wakana"},
         {id: 32, name: 'Reona Nyubara', band: "Raise A Suilen", role: "Keyboard", stageName: "PAREO", slug: "raise-a-suilen", nameSlug: "reona-nyubara"},
         {id: 33, name: 'Rokka Asahi', band: "Raise A Suilen", role: "Guitar", stageName: "LOCK", slug: "raise-a-suilen", nameSlug: "rokka-asahi"},
-        {id: 34, name: 'Satou Masuki', band: "Raise A Suilen", role: "Drum", stageName: "MASKING", slug: "raise-a-suilen", nameSlug: "satou-masuki"},
+        {id: 34, name: 'Masuki Satou', band: "Raise A Suilen", role: "Drum", stageName: "MASKING", slug: "raise-a-suilen", nameSlug: "masuki-satou"},
         {id: 35, name: 'Chiyu Tamade', band: "Raise A Suilen", role: "DJ", stageName: "CHU²", slug: "raise-a-suilen", nameSlug: "chiyu-tamade"},
     ]
 }

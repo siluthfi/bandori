@@ -3,7 +3,6 @@ import { useParams, useHistory } from "react-router-dom";
 import DataMember from "./data/DataMember";
 import DataBand from "./data/DataBand";
 import { useSelector } from "react-redux";
-import { useState } from "react";
 
 const Chara = () => {
     useEffect(() => {
@@ -18,7 +17,6 @@ const Chara = () => {
                         .map(data => data)[0];
 
     const history = useHistory();
-    console.log(history)
     
     const [gambar, setGambar] = useState(null);
     
@@ -28,7 +26,6 @@ const Chara = () => {
     const { name, role } = DataMember(member)
     */
 
-    console.log(gambar)
     const handleClick = () => {
         setGambar(member + "-before")
     }
@@ -48,7 +45,7 @@ const Chara = () => {
                     </div>
                 </div>
                 <div className="col-md-3">
-                    <img src={`/img/${eachmember.nameSlug}.png`} alt="" className="img-fluid shadow transition-3" />
+                    <img src={`/img/${gambar}.png`} alt="" className="img-fluid shadow transition-3" />
                 </div>
                 <div className="col-md-2 d-flex align-content-center flex-wrap">
                     <div className="row">
