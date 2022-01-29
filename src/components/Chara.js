@@ -1,20 +1,32 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import DataMember from "./data/DataMember";
 import DataBand from "./data/DataBand";
+import { useSelector } from "react-redux";
+import { useState } from "react";
 
 const Chara = () => {
     useEffect(() => {
         setGambar(member)
     }, []);
 
+    const [name, setName] = useState('');
+    const { band, member } = useParams()
+    const eachmember = useSelector(state => state.characters)
+                        .filter(chara => chara.slug === band)
+                        .filter(band => band.nameSlug === member)
+                        .map(data => data)[0];
+
     const history = useHistory();
     console.log(history)
     
     const [gambar, setGambar] = useState(null);
+    
+    /* using custom hooks
     const { band, member } = useParams()
     const { band: bandname, hash } = DataBand(band)
     const { name, role } = DataMember(member)
+    */
 
     console.log(gambar)
     const handleClick = () => {
@@ -31,17 +43,17 @@ const Chara = () => {
                 <div className="col-md-2 d-flex align-content-center flex-wrap">
                     <div className="row">
                         <div className="col-md on-hover" onClick={handleClick}>
-                            <img src={`/img/${member}-icon-before.png`} alt="" className='shadow' />
+                            <img src={`/img/${eachmember.nameSlug}-icon-before.png`} alt="" className='shadow' />
                         </div>
                     </div>
                 </div>
                 <div className="col-md-3">
-                    <img src={`/img/${gambar}.png`} alt="" className="img-fluid shadow transition-3" />
+                    <img src={`/img/${eachmember.nameSlug}.png`} alt="" className="img-fluid shadow transition-3" />
                 </div>
                 <div className="col-md-2 d-flex align-content-center flex-wrap">
                     <div className="row">
                         <div className="col-md on-hover" onClick={handleClick2}>
-                            <img src={`/img/${member}-icon.png`} alt="" className='shadow' />
+                            <img src={`/img/${eachmember.nameSlug}-icon.png`} alt="" className='shadow' />
                         </div>
                     </div>
                 </div>
