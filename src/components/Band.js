@@ -5,10 +5,14 @@ const Band = () => {
     const characters = useSelector(state => state.characters).filter(state => state.slug == band);
     return (
         <>
-            <div className="container p-1">
-
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-md-3">
+                        <img src={`/img/${band}.png`} alt="" className="img-fluid" />
+                    </div>
+                </div>
             </div>
-            <div className="container-fluid my-5">
+            <div className="container-fluid my-3">
                 <div className="row">
                     {
                         characters.map(data => (
