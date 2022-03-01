@@ -7,7 +7,7 @@ const initState = {
         {id: 5, name: 'Rimi Ushigome', band: "Poppin'Party", role: "Bass", slug: "poppin-party", nameSlug: "rimi-ushigome"},
         {id: 6, name: 'Ran Mitake', band: "Afterglow", role: "Vocal & Guitar", slug: "afterglow", nameSlug: "ran-mitake"},
         {id: 7, name: 'Tsugumi Hazawa', band: "Afterglow", role: "Keyboard", slug: "afterglow", nameSlug: "tsugumi-hazawa"},
-        {id: 6, name: 'Moca Aoba', band: "Afterglow", role: "Guitar", slug: "afterglow", nameSlug: "moca-aoba"},
+        {id: 8, name: 'Moca Aoba', band: "Afterglow", role: "Guitar", slug: "afterglow", nameSlug: "moca-aoba"},
         {id: 9, name: 'Tomoe Udagawa', band: "Afterglow", role: "Drum", slug: "afterglow", nameSlug: "tomoe-udagawa"},
         {id: 10, name: 'Himari Uehara', band: "Afterglow", role: "Bass" , slug: "afterglow", nameSlug: "himari-uehara"},
         {id: 11, name: 'Yukina Minato', band: "Roselia", role: "Vocal", slug: "roselia", nameSlug: "yukina-minato"},

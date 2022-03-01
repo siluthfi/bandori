@@ -173,3 +173,32 @@ body::before {
 .transition-3 {
     transition: .3s;
 }
+
+.orange {
+    background-color: #ff7b53;
+}
+
+.red {
+    background-color: #ff4343;
+}
+
+.pastel {
+    background-color: #ff70d4;
+}
+
+.purple {
+    background-color: #e941ff;
+}
+
+.white {
+    background-color: #f5abff;
+}
+
+.yellow {
+    color: black !important;
+    background-color: #fffc49;
+}
+
+.retro {
+    background-color: #66d6d6;
+}

@@ -13,6 +13,7 @@ function App() {
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route exact path="/bands" component={Bands} />
+          <Route exact path="/bands/:band" component={Bands} />
           <Route exact path="/bands/:band/:member" component={Chara} />
         </Switch>
         {/* <Footer /> */}
