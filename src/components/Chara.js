@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import DataMember from "./data/DataMember";
 import DataBand from "./data/DataBand";
 import { useSelector } from "react-redux";
@@ -16,7 +16,7 @@ const Chara = () => {
                         .filter(band => band.nameSlug === member)
                         .map(data => data)[0];
 
-    const history = useHistory();
+    const navigate = useNavigate();
     
     const [gambar, setGambar] = useState(null);
     
@@ -57,7 +57,7 @@ const Chara = () => {
             </div>
             <div className="row my-5 justify-content-center">
                 <div className="col-md-1">
-                    <button className="btn btn-custom shadow-sm" onClick={() => history.goBack()}>Back</button>
+                    <button className="btn btn-custom shadow-sm" onClick={() => navigate(-1)}>Back</button>
                 </div>
             </div>
         </div>

@@ -1,11 +1,7 @@
 import React from 'react'
-import { NavLink, withRouter } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-const Navbar = (props) => {
-    if (props.history.location.pathname === "/") {
-        props.history.push('/home')
-    }
-
+const Navbar = () => {
     return (
         <section data-label-sendiri="navbar-section">
             <nav className="navbar fixed-top navbar-expand navbar-dark py-3 fs-5 fw-bold">
@@ -32,4 +28,4 @@ const Navbar = (props) => {
     );
 }
  
-export default withRouter(Navbar);
+export default Navbar;

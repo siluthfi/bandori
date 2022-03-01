@@ -1,24 +1,25 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, } from 'react-router-dom'
 import Navbar from './templates/Navbar'
 import Bands from './components/Bands'
 import Home from './components/Home';
 import Chara from './components/Chara';
+import Band from './components/Band';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Switch>
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/bands" component={Bands} />
-          <Route exact path="/bands/:band" component={Bands} />
-          <Route exact path="/bands/:band/:member" component={Chara} />
-        </Switch>
-        {/* <Footer /> */}
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/bands" element={<Bands />} />
+          <Route path="/bands/:band" element={<Band />} />
+          <Route path="/bands/:band/:member" element={<Chara />} />
+        </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
