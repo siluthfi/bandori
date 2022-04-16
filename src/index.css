@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Sora', sans-serif;
-    background-image: url('./images/background.jpg');
+    background-image: url('./images/picobackgroudn.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -202,3 +202,90 @@ body::before {
 .retro {
     background-color: #66d6d6;
 }
+
+.opacity-0 {
+    display: none;
+}
+
+.row-sort {
+    position: relative;
+    height: 350px;
+    transition: .5s ease;
+}
+
+.row-sort.minimize {
+    height: 0;
+}
+
+.sorting {
+    position: absolute;
+    background-color: white;
+    height: 0%;
+    z-index: 9;
+    overflow: hidden;
+    transition: .5s ease;
+    /* animation: minimizesort .5s forwards ease; */
+}
+
+.expandable {
+    position: relative;
+    height: 100%;
+    /* transition: .5s; */
+    /* animation: expandsort .5s forwards ease; */
+}
+
+@keyframes expandsort {
+    0% {
+        height: 0%;
+    }
+    100% {
+        box-shadow: 2px 2px 10px #ff4343;
+        height: 100%;
+    }
+}
+
+@keyframes minimizesort {
+    0% {
+        box-shadow: 2px 2px 10px #ff4343;
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+/* @keyframes expandsort {
+    0% {
+        height: 100px;
+    }
+    10% {
+        height: 110px;
+    }
+    20% {
+        height: 120px;
+    }
+    30% {
+        height: 130px;
+    }
+    40% {
+        height: 140px;
+    }
+    50% {
+        height: 150px;
+    }
+    60% {
+        height: 160px;
+    }
+    70% {
+        height: 170px;
+    }
+    80% {
+        height: 180px;
+    }
+    90% {
+        height: 190px;
+    }
+    100% {
+        height: 200px;
+    }
+} */
